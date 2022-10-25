@@ -1,20 +1,22 @@
-struct MatrizQuadrada {
-    int _ordem;
-    int *tamanho;
+struct MatrizQuadrada
+{
+    int **matriz;
+    int ordem;
 
-    //construtores e desconstrutores
+    // construtores e desconstrutores
 
     MatrizQuadrada();
     ~MatrizQuadrada();
 
-}
+    // funçoes
 
-// funçoes 
 
-void leMatriz(MatrizQuadrada &M1);
-void criaMatrizIdentidade(MatrizQuadrada &M1, int n);
-void imprimeMatriz(MatrizQuadrada &M1);
-void produto(MatrizQuadrada &M1, MatrizQuadrada &M2, MatrizQuadrada &produto);
-void soma(MatrizQuadrada &M1, MatrizQuadrada &M2, MatrizQuadrada &soma);
-void criaTransposta(MatrizQuadrada &M1, MatrizQuadrada &transposta);
+void leMatriz();
+void soma(MatrizQuadrada &M1, MatrizQuadrada &M2);
+void imprimeMatriz();
+void produto(MatrizQuadrada &M1, MatrizQuadrada &M2);
+void criaTransposta(MatrizQuadrada &M1);
 bool compara(MatrizQuadrada &M1, MatrizQuadrada &M2);
+void criaMatrizIdentidade();
+
+};
