@@ -2,7 +2,7 @@
 #include "matrizquadrada.h"
 
 MatrizQuadrada::MatrizQuadrada(){
-
+    // Pergunta a ordem das matrizes (não para de perguntar até completar de todas as matrizes.)
     std::cout << "Ordem da matriz: " << std::endl;
     std::cin >> ordem;
     matriz=new int*[ordem];
